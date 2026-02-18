@@ -1,0 +1,129 @@
+Conditional statements are used to make decisions in a program.
+They allow Python to execute certain blocks of code only if a condition is true.
+
+Python uses three main conditional structures:
+
+if
+
+if–else
+
+if–elif–else
+_____________>
+1. if Statement
+
+Used when you want to run a block of code only if a condition is true.
+
+Syntax
+if condition:
+    statement(s)
+
+Example
+age = 18
+
+if age >= 18:
+    print("You are an adult")
+
+2. if–else Statement
+
+Used when you need two possible outcomes.
+
+Syntax
+if condition:
+    statement(s)
+else:
+    statement(s)
+
+Example
+marks = 45
+
+if marks >= 50:
+    print("Pass")
+else:
+    print("Fail")
+
+3. if–elif–else Statement
+
+Used when you have multiple conditions to check.
+
+Syntax
+if condition1:
+    statement(s)
+elif condition2:
+    statement(s)
+elif condition3:
+    statement(s)
+else:
+    statement(s)
+
+Example
+score = 85
+
+if score >= 90:
+    print("Grade A")
+elif score >= 80:
+    print("Grade B")
+elif score >= 70:
+    print("Grade C")
+else:
+    print("Grade D")
+
+IMPORTANT NOTES
+✔ Conditions must be boolean expressions
+
+Example: x > 5, name == "Alex"
+
+✔ Indentation is mandatory in Python
+
+Python uses 4 spaces (or 1 tab) to define blocks.
+
+✔ You can have multiple elif, but only one else.
+4. Nested if Statements
+
+An if inside another if.
+
+Example
+age = 20
+
+if age >= 18:
+    if age >= 60:
+        print("Senior Citizen")
+    else:
+        print("Adult")
+
+5. Using Logical Operators in Conditions
+Example with and
+age = 16
+
+if age >= 13 and age < 18:
+    print("Teenager")
+
+Example with or
+color = "red"
+
+if color == "red" or color == "blue":
+    print("Primary color")
+
+Example with not
+x = 5
+
+if not x == 10:
+    print("x is not 10")
+
+6. Short-Hand (One-Line) if
+Basic one-line if
+a = 5
+if a > 0: print("Positive number")
+
+One-line if–else (ternary)
+age = 18
+msg = "Adult" if age >= 18 else "Minor"
+print(msg)
+
+7. Combining Comparisons (Chained Conditions)
+
+Python allows comparison chaining:
+
+x = 10
+
+if 5 < x < 20:
+    print("x is between 5 and 20")
