@@ -1,0 +1,177 @@
+Python Operators
+Operators are used to perform operations on variables and values.
+Python has 7 main categories of operators:
+
+Arithmetic Operators
+
+Assignment Operators
+
+Comparison (Relational) Operators
+
+Logical Operators
+
+Bitwise Operators
+
+Membership Operators
+
+Identity Operators
+______________________________________________________________________________________
+ARITHMETIC OPERATORS
+
+Used for mathematical operations.
+
+Operator	Meaning	Example
++	Addition	a + b
+-	Subtraction	a - b
+*	Multiplication	a * b
+/	Division (float)	a / b
+//	Floor division (integer)	a // b
+%	Modulus (remainder)	a % b
+**	Exponent	a ** b
+Examples
+a = 10
+b = 3
+
+print(a + b)   # 13
+print(a - b)   # 7
+print(a * b)   # 30
+print(a / b)   # 3.333...
+print(a // b)  # 3
+print(a % b)   # 1
+print(a ** b)  # 1000 (10^3)
+
+2. ASSIGNMENT OPERATORS
+
+Used to assign values to variables.
+
+Operator	Meaning	Example
+=	Assign	a = 5
++=	Add & assign	a += 3 → a = a + 3
+-=	Subtract & assign	a -= 3
+*=	Multiply & assign	a *= 3
+/=	Divide & assign	a /= 3
+//=	Floor divide & assign	a //= 3
+%=	Modulus & assign	a %= 3
+**=	Exponent & assign	a **= 3
+Example
+a = 10
+a += 5     # a = 15
+a *= 2     # a = 30
+
+3. COMPARISON (RELATIONAL) OPERATORS
+
+Used to compare values — result is always True or False.
+
+Operator	Meaning	Example
+==	Equal to	a == b
+!=	Not equal to	a != b
+>	Greater than	a > b
+<	Less than	a < b
+>=	Greater or equal	a >= b
+<=	Less or equal	a <= b
+Example
+a = 5
+b = 8
+
+print(a == b)  # False
+print(a < b)   # True
+print(a <= 5)  # True
+
+4. LOGICAL OPERATORS
+
+Used to combine multiple conditions.
+
+| Operator | Meaning | Example |
+|----------|---------|
+| and | True only if BOTH conditions are True | (a > 3 and a < 10) |
+| or | True if AT LEAST one condition is True | (a > 3 or a < 2) |
+| not | Reverses True/False | not(a > 5) |
+
+Example
+x = 7
+
+print(x > 5 and x < 10)  # True
+print(x > 10 or x == 7)  # True
+print(not(x == 7))       # False
+
+5. BITWISE OPERATORS
+
+Used to perform operations on binary numbers.
+
+Operator	Meaning	Example
+&	AND	a & b
+`	`	OR
+^	XOR	a ^ b
+~	NOT	~a
+<<	Left shift	a << 2
+>>	Right shift	a >> 2
+Example
+a = 10   # 1010
+b = 4    # 0100
+
+print(a & b)   # 0
+print(a | b)   # 14
+print(a ^ b)   # 14
+print(a << 1)  # 20
+print(a >> 1)  # 5
+
+6. MEMBERSHIP OPERATORS
+
+Used to test if a value is in a sequence.
+
+| Operator | Meaning | Example |
+|----------|---------|
+| in | True if value exists | "a" in "apple" |
+| not in | True if value does NOT exist | "z" not in "apple" |
+
+Example
+fruits = ["apple", "banana", "cherry"]
+
+print("banana" in fruits)        # True
+print("grape" not in fruits)     # True
+
+7. IDENTITY OPERATORS
+
+Used to compare memory locations of two objects.
+
+| Operator | Meaning | Example |
+|----------|---------|
+| is | True if both refer to SAME object | a is b |
+| is not | True if not same | a is not b |
+
+Example
+x = [1, 2, 3]
+y = x
+z = [1, 2, 3]
+
+print(x is y)     # True (same memory)
+print(x is z)     # False (same values, different object)
+
+SPECIAL NOTES
+Difference between == and is:
+
+== → checks value
+
+is → checks memory address
+
+Difference between / and //:
+
+/ → gives float
+
+// → gives integer floor value
+
+Operator Precedence (Highest → Lowest)
+
+**
+
+*, /, //, %
+
++, -
+
+Comparison operators (<, >, ==, etc.)
+
+not
+
+and
+
+or
